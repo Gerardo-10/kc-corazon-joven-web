@@ -22,6 +22,7 @@ El proyecto ha sido construido bajo un stack moderno de desarrollo, optimizado c
 
 El código fuente principal reside en la carpeta `src/`. La estructura es modular, siguiendo las mejores prácticas para facilitar la navegación y el mantenimiento del código:
 
+```
 KC Corazón Joven/
 ├── node_modules/         # Dependencias del proyecto (generadas por npm install)
 ├── src/                  # Código Fuente de la Aplicación
@@ -42,6 +43,7 @@ KC Corazón Joven/
 ├── index.html            # Archivo HTML raíz.
 ├── package.json          # Definición de dependencias y scripts.
 └── vite.config.ts        # Configuración de compilación de Vite.
+```
 
 ---
 
