@@ -1,0 +1,16 @@
+# Dependencias
+/node_modules
+/dist
+
+# Archivos de la build de Vite
+.vite/
+/coverage
+
+# Archivos temporales o de configuración del IDE
+.env
+.env.local
+.vscode/
+
+# Archivos de caché del SO (Windows/macOS)
+.DS_Store
+Thumbs.db
