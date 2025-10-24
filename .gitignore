@@ -14,3 +14,6 @@
 # Archivos de caché del SO (Windows/macOS)
 .DS_Store
 Thumbs.db
+
+# Directorio de Salida de la Compilación (Vite)
+/build
