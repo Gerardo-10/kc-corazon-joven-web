@@ -1,4 +1,6 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
+// @ts-ignore: image module without type declaration
+import logoImage from '../assets/Logo-KC.jpg';
 
 interface HeroProps {
   onNavigate: (page: string) => void;
@@ -22,21 +24,20 @@ export function Hero({ onNavigate }: HeroProps) {
                 </span>
               </h1>
               <p className="text-xl text-gray-600">
-                Brindando amor, cuidado y compañía a nuestros adultos mayores con calidez y profesionalismo
+                Brindando amor, cuidado y compañía a nuestros adultos mayores
+                con calidez y profesionalismo
               </p>
             </div>
 
             <div className="flex gap-4 pt-4">
-              <button 
-                onClick={() => onNavigate('what-i-do')}
-                className="px-6 py-3 bg-[#8B1538] text-white rounded-lg hover:bg-[#6d1029] transition-colors"
-              >
+              <button
+                onClick={() => onNavigate("what-i-do")}
+                className="px-6 py-3 bg-[#8B1538] text-white rounded-lg hover:bg-[#6d1029] transition-colors">
                 Conocer Servicios
               </button>
-              <button 
-                onClick={() => onNavigate('contact')}
-                className="px-6 py-3 border-2 border-[#1e3a5f] text-[#1e3a5f] rounded-lg hover:bg-[#1e3a5f] hover:text-white transition-colors"
-              >
+              <button
+                onClick={() => onNavigate("contact")}
+                className="px-6 py-3 border-2 border-[#1e3a5f] text-[#1e3a5f] rounded-lg hover:bg-[#1e3a5f] hover:text-white transition-colors">
                 Contáctame
               </button>
             </div>
@@ -44,10 +45,10 @@ export function Hero({ onNavigate }: HeroProps) {
 
           {/* Right Side - Image */}
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden border-4 border-gray-100 shadow-2xl">
+            <div className="rounded-2xl overflow-hidden border-4 border-gray-100 shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1758691031410-13bd745df928?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHNlbmlvcnMlMjBzbWlsaW5nfGVufDF8fHx8MTc2MTA2NzEyNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Adultos mayores felices"
+                src={logoImage}
+                alt="KC Corazón Joven"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 // @ts-ignore: image module without type declaration
-import logoImage from '../assets/logo-kc-corazon-joven.png';
+import logoImage from '../assets/Logo-KC.jpg';
 
 interface NavbarProps {
   activePage: string;
